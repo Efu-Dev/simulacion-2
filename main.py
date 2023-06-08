@@ -1,3 +1,7 @@
+
+
+from random import random
+
 def funcion(x):
     return 3*x**2 + 2*x
 
@@ -13,9 +17,8 @@ def error(x):
 
 M = int(input("Ingrese la cantidad de veces que se ejecutará la simulación: "))
 suma = 0
-xn = A
 for x in range(M):
-    xn += (B-A)/M
+    xn = random() * (B - A) + A # Genera un número aleatorio entre A y B
     suma += funcion(xn)
 
 valor_aproximado = suma*(B-A)/M
