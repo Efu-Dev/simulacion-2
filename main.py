@@ -26,3 +26,5 @@ valor_aproximado = suma*(B-A)/M
 print(f"Resultado Matemático: {integral_matematica()}")
 print(f"Resultado Aproximado de la Integral (MonteCarlo): {valor_aproximado}")
 print(f"Porcentaje de error: {error(valor_aproximado)}%")
+
+input("Presione enter para cerrar.")
